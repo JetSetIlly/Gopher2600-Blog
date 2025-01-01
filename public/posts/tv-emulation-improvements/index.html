@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en-uk">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>TV Emulation Improvements | Current Status</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="description" content="In the previous post I stated that I was putting Gopher2600 into maintenance mode. Some things have changed since then . My original intention was to only fix bugs reported by anybody who uses the emulator. I have in fact made three releases since that time, containing bug fixes and some smaller features.
+So while not &ldquo;maintenance mode&rdquo; exactly, I have been working less on the project. But recently I have been working on improving the CRT emulation. My goal for Gopher2600 is now to not only provide an accurate and robust Atari 2600 emulator but to also accurately emulate the television. After all, the television, particularly the CRT television, is an important part of the 2600 games system.">
+    <meta name="generator" content="Hugo 0.140.2">
+    
+    
+    
+      <meta name="robots" content="noindex, nofollow">
+    
+    
+
+    
+<link rel="stylesheet" href="/ananke/css/main.min.css" >
+
+
+
+    
+
+    
+      
+
+    
+
+    
+
+    
+      <link rel="canonical" href="http://localhost:1313/posts/tv-emulation-improvements/">
+    
+
+    <meta property="og:url" content="http://localhost:1313/posts/tv-emulation-improvements/">
+  <meta property="og:site_name" content="Current Status">
+  <meta property="og:title" content="TV Emulation Improvements">
+  <meta property="og:description" content="In the previous post I stated that I was putting Gopher2600 into maintenance mode. Some things have changed since then . My original intention was to only fix bugs reported by anybody who uses the emulator. I have in fact made three releases since that time, containing bug fixes and some smaller features.
+So while not “maintenance mode” exactly, I have been working less on the project. But recently I have been working on improving the CRT emulation. My goal for Gopher2600 is now to not only provide an accurate and robust Atari 2600 emulator but to also accurately emulate the television. After all, the television, particularly the CRT television, is an important part of the 2600 games system.">
+  <meta property="og:locale" content="en_uk">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2024-11-23T00:00:00+00:00">
+    <meta property="article:modified_time" content="2024-11-23T00:00:00+00:00">
+
+  <meta itemprop="name" content="TV Emulation Improvements">
+  <meta itemprop="description" content="In the previous post I stated that I was putting Gopher2600 into maintenance mode. Some things have changed since then . My original intention was to only fix bugs reported by anybody who uses the emulator. I have in fact made three releases since that time, containing bug fixes and some smaller features.
+So while not “maintenance mode” exactly, I have been working less on the project. But recently I have been working on improving the CRT emulation. My goal for Gopher2600 is now to not only provide an accurate and robust Atari 2600 emulator but to also accurately emulate the television. After all, the television, particularly the CRT television, is an important part of the 2600 games system.">
+  <meta itemprop="datePublished" content="2024-11-23T00:00:00+00:00">
+  <meta itemprop="dateModified" content="2024-11-23T00:00:00+00:00">
+  <meta itemprop="wordCount" content="372">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="TV Emulation Improvements">
+  <meta name="twitter:description" content="In the previous post I stated that I was putting Gopher2600 into maintenance mode. Some things have changed since then . My original intention was to only fix bugs reported by anybody who uses the emulator. I have in fact made three releases since that time, containing bug fixes and some smaller features.
+So while not “maintenance mode” exactly, I have been working less on the project. But recently I have been working on improving the CRT emulation. My goal for Gopher2600 is now to not only provide an accurate and robust Atari 2600 emulator but to also accurately emulate the television. After all, the television, particularly the CRT television, is an important part of the 2600 games system.">
+
+	
+  </head><body class="ma0 avenir bg-near-white development">
+
+    
+   
+  
+
+  <header>
+    <div class="bg-gray">
+      <nav class="pv3 ph3 ph4-ns" role="navigation">
+  <div class="flex-l justify-between items-center center">
+    <a href="/" class="f3 fw2 hover-white no-underline white-90 dib">
+      
+        Current Status
+      
+    </a>
+    <div class="flex-l items-center">
+      
+
+      
+      <div class="ananke-socials"></div>
+
+    </div>
+  </div>
+</nav>
+
+    </div>
+  </header>
+
+
+
+    <main class="pb7" role="main">
+      
+  
+  <article class="flex-l flex-wrap justify-between mw8 center ph3">
+    <header class="mt4 w-100">
+      <aside class="instapaper_ignoref b helvetica tracked ttu">
+          
+        Posts
+      </aside><div id="sharing" class="mt3 ananke-socials"></div>
+<h1 class="f1 athelas mt3 mb1">TV Emulation Improvements</h1>
+      
+      
+      
+      <time class="f6 mv4 dib tracked" datetime="2024-11-23T00:00:00Z">November 23, 2024</time>
+      
+
+      
+      
+    </header>
+    <div class="nested-copy-line-height lh-copy serif f4 nested-links mid-gray pr4-l w-two-thirds-l"><p>In the previous post I stated that I was putting Gopher2600 into maintenance mode. Some things have changed since then . My original intention was to only fix bugs reported by anybody who uses the emulator. I have in fact made three releases since that time, containing bug fixes and some smaller features.</p>
+<p>So while not &ldquo;maintenance mode&rdquo; exactly, I have been working less on the project. But recently I have been working on improving the CRT emulation. My goal for Gopher2600 is now to not only provide an accurate and robust Atari 2600 emulator but to also accurately emulate the television. After all, the television, particularly the CRT television, is an important part of the 2600 games system.</p>
+<p>I have experimented with differing bezel options to complement the already existing CRT effects. And I have very recently begun working on authentic color generation. The early results of both are very promising.</p>
+<p><img src="pitfall.png" alt="Pitfall"></p>
+<p>Screen reflections, more visible with a darker picture, help sell the illusion of the CRT glass. The reflections look far better when you can see the emulator running.</p>
+<p><img src="he_man.png" alt="He Man"></p>
+<p>The full computationally generated NTSC palette <em>(all generated colours in these screenshots are work-in-progress)</em></p>
+<p><img src="test_card.png" alt="Test Card"></p>
+<p>I&rsquo;ve also solved a long-standing problem with regards to monitor VSYNC under X11. In fact, the whole rendering pipeline is much more robust. All in all, the future of the display for Gopher2600 is looking good. I&rsquo;m now feeling much more confident in being able to produce a v1.0 of the emulator before long.</p>
+<p><em>Note that these changes are not yet pushed to the repository</em></p>
+<p>I&rsquo;m also considering a project name change for v1.0 because I no longer feel that the name suits the project. Gopher2600 started out partly as an experiment with Go and so emphasising the roots seemed appropriate. However, I think that time has passed and so maybe another name should be adopted.</p>
+<p>Moreover, somebody has since released a Nintendo64 emulator called <a href="https://github.com/gopher64/gopher64">Gopher64</a>! Although, Gopher2600 predates Gopher64, I&rsquo;m comfortable with the idea of changing the name to ensure the projects are viewed as distinct. Truth be told, I find it bizarre that there are now two separate emulators with similar names. But hey! It doesn&rsquo;t really matter I suppose. I might keep the name yet.</p>
+<ul class="pa0">
+  
+</ul>
+<div class="mt6 instapaper_ignoref">
+      
+      
+      </div>
+    </div>
+
+    <aside class="w-30-l mt6-l">
+
+
+
+
+</aside>
+
+  </article>
+
+    </main>
+    <footer class="bg-gray bottom-0 w-100 pa3" role="contentinfo">
+  <div class="flex justify-between">
+  <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="http://localhost:1313/" >
+    &copy;  Current Status 2025 
+  </a>
+    <div><div class="ananke-socials"></div>
+</div>
+  </div>
+</footer>
+
+  </body>
+</html>

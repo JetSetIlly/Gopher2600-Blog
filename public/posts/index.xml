@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Current Status</title>
+    <link>http://localhost:1313/posts/</link>
+    <description>Recent content in Posts on Current Status</description>
+    <generator>Hugo</generator>
+    <language>en-uk</language>
+    <lastBuildDate>Sat, 23 Nov 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>TV Emulation Improvements</title>
+      <link>http://localhost:1313/posts/tv-emulation-improvements/</link>
+      <pubDate>Sat, 23 Nov 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/tv-emulation-improvements/</guid>
+      <description>&lt;p&gt;In the previous post I stated that I was putting Gopher2600 into maintenance mode. Some things have changed since then . My original intention was to only fix bugs reported by anybody who uses the emulator. I have in fact made three releases since that time, containing bug fixes and some smaller features.&lt;/p&gt;&#xA;&lt;p&gt;So while not &amp;ldquo;maintenance mode&amp;rdquo; exactly, I have been working less on the project. But recently I have been working on improving the CRT emulation. My goal for Gopher2600 is now to not only provide an accurate and robust Atari 2600 emulator but to also accurately emulate the television. After all, the television, particularly the CRT television, is an important part of the 2600 games system.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Maintenence Mode</title>
+      <link>http://localhost:1313/posts/maintenance-mode/</link>
+      <pubDate>Fri, 19 Jul 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/maintenance-mode/</guid>
+      <description>&lt;p&gt;The current status of Gopher2600 is maintenance. I&amp;rsquo;m happy to fix specific bugs people may have but I won&amp;rsquo;t be adding anything substantial. This may change in years to come but I have other projects that I want to focus on. Too many years have been wasted on this and I need to look at something else.&lt;/p&gt;&#xA;&lt;h3 id=&#34;self-reflection&#34;&gt;&lt;strong&gt;Self Reflection&lt;/strong&gt;&lt;/h3&gt;&#xA;&lt;p&gt;Gopher2600 started out as a way of exploring the Atari2600. I had written a small 4k game for console and enjoyed doing so. What I didn&amp;rsquo;t enjoy was cycle-counting. So Gopher2600 was originally meant to be a cycle-counter. It slowly grew from that into a complete emulator. That wasn&amp;rsquo;t my intention when I started but each step led me to the inevitable result.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
