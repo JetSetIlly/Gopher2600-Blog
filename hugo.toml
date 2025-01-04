@@ -1,0 +1,21 @@
+baseURL = 'https://example.org/'
+languageCode = 'en-uk'
+title = 'Gopher2600/WSYNC'
+theme = 'ananke'
+copyright = "2025 Stephen Illingworth. All rights reserved."
+sectionPagesMenu = "main"
+
+[params]
+site_logo = 'avatar.jpg'
+background_color_class = 'bg-dark-gray'
+body_classes = 'avenir bg-near-white'
+recent_posts_number = 10
+read_more_copy = "read entire post"
+
+[params.ananke.social.follow]
+networks = [
+  "github"
+]
+
+[params.ananke.social.github]
+username = "JetSetIlly/Gopher2600"
