@@ -2,7 +2,7 @@ baseURL = 'https://example.org/'
 languageCode = 'en-uk'
 title = 'Gopher2600/WSYNC'
 theme = 'ananke'
-copyright = "2025 Stephen Illingworth. All rights reserved."
+copyright = "2024-2025 Stephen Illingworth. All rights reserved."
 sectionPagesMenu = "main"
 
 [params]
