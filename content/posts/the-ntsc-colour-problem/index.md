@@ -73,7 +73,7 @@ Each colour register is eight bits wide but with an unused _least significant bi
 
 If we need to separate the hue and luminance values we can do something like this:
 
-	lum = col & 0xfe
+	lum = col & 0x0e
 	hue = (col >> 4) & 0x0f
 	
 ### Luminance and Hue
@@ -233,7 +233,7 @@ Either way, it seems there is no single answer and really comes down to belief. 
 
 It's all very unsatisfactory but I think we can safely say that the intention is for the phase to be somewhere between 25.7° and 26.7°.
 
-A special work about Janice. I don't believe the Janice document tells us very much and only adds to the confusion. The identical descriptions for hue-1 and hue-15 can only mean that 25.7° is correct. But that also means accepting that hue-14, described as gold in JAN, is more green than orange. That doesn't seem correct to me.
+A special word about Janice. I don't believe the Janice document tells us very much and only adds to the confusion. The identical descriptions for hue-1 and hue-15 can only mean that 25.7° is correct. But that also means accepting that hue-14, described as gold in JAN, is more green than orange. That doesn't seem correct to me.
 
 The other way to resolve the Janice colour table is to accept that _light orange_ can describe two different shades of _light orange_. That seems more plausible but it is once again, an unsatisfactory answer.
 
