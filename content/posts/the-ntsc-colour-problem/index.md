@@ -6,7 +6,7 @@ title = 'The NTSC Colour Problem'
 
 During the recent development work on v0.40.0 of Gopher2600 I decided to do work on the NTSC palette and in particular, how the colour values are derived. This work has been on my personal TODO list for many years but I never found a reason to take a closer look.
 
-When I finally did look I was a little surpised. I was aware that there were differing opinions on what the NTSC palette should be but what I didn't realise was how fundamental to the 2600 this disagreement is.
+When I finally did look I was a little surprised. I was aware that there were differing opinions on what the NTSC palette should be but what I didn't realise was how fundamental to the 2600 this disagreement is.
 
 The immediate prompt for this work was [this thread](https://forums.atariage.com/topic/375698-how-are-ntsc-console-colors-really-set-up/) on AtariAge. It's a long thread with lots of confusion (some of it my own) but it's worth reading through.
 
@@ -150,7 +150,7 @@ The colour wheel above show the markers with the larger phase of 25.7°. Note th
 
 Also note that it is now hue-14 which is on the orange-green boundary, which matches the description of hue-14 in the TIA\_1A document but not JAN.
 
-The complication now is the differing descriptions for hue-1 and hue-15 in the TIA\_1A document. If the positions of the hues are exactly the same then surely the desciptions should be too.
+The complication now is the differing descriptions for hue-1 and hue-15 in the TIA\_1A document. If the positions of the hues are exactly the same then surely the descriptions should be too.
 
 We need further help. What other historical information is there to help us discern what the correct phase is?
 
