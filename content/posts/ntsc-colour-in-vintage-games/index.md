@@ -4,7 +4,7 @@ draft = false
 title = 'NTSC Colour In Vintage Games'
 +++
 
-In the previous article while discussing [the NTSC colour problem](/posts/the-ntsc-colour-problem/) I said that examining vintage 2600 ROMs would be an informative exercise. That is the purpose of today's article.
+In the previous article while discussing [the NTSC colour problem]({{< relref "../posts/the-ntsc-colour-problem/" >}}) I said that examining vintage 2600 ROMs would be an informative exercise. That is the purpose of today's article.
 
 While selecting ROMs to examine for this exercise, I looked for games with colour for which there are secondary reference points. For example, an image in a manual or on a game box to make comparisons with.
 
@@ -150,7 +150,7 @@ In other words, if either the Krull or Atlantis rotation was the default setting
 
 That there are games in the vintage collection that use an alternative palette is undeniable. Whichever way we look at it, there are three games highlighted here (Krull, Atlantis and Pitfall) that seem to look best with a different hue adjustment (or colourburst adjustment, if we prefer to think of it in those terms).
 
-In the previous [article](/posts/the-ntsc-colour-problem/) I tried to reason about default settings using historic documents. In particular, the colour descriptions in those documents were used as a reference. I believe a default colourburst rotation of 57° and a phase of 26.7° is as close to the _intended_ palette of the _TIA\_1A_ document (and other sources) as it is reasonable to get.
+In the previous [article]({{< relref "../posts/the-ntsc-colour-problem/" >}}) I tried to reason about default settings using historic documents. In particular, the colour descriptions in those documents were used as a reference. I believe a default colourburst rotation of 57° and a phase of 26.7° is as close to the _intended_ palette of the _TIA\_1A_ document (and other sources) as it is reasonable to get.
 
 The problem now is what to do with the exceptions to the rule.
 
