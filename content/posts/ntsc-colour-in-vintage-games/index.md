@@ -26,7 +26,7 @@ As can be seen, for most of the hues the differences are very small. To help pro
 
 The Smurf on the left has been rendered with a 26.7° palette, while the Smurf on the right is using a 25.7° palette. The differences are very slight, maybe even imperceptible. Blues are not helpful for our purposes.
 
-However, the there is a more noticeable change between the three palettes when looking at hue-14 and hue-15. In the 26.7° palette, hue-15 is more noticeably orange and hue-14 appears more brown than green.
+However, there is a more noticeable change between the three palettes when looking at hue-14 and hue-15. In the 26.7° palette, hue-15 is more noticeably orange and hue-14 appears more brown than green.
 
 A great example of a ROM that uses hue-14 is _Space Invaders_, developed by Atari and released in 1980. 
 
