@@ -36,7 +36,9 @@ The case for automation would be even stronger if there was another example of a
 
 ![Millipede (box art)](millipede_boxart.png)
 
-Alas, _Millipede_ does not exhibit the same problem. _Krull_ is the only example so far, in which the hue shift is significant.
+Alas, _Millipede_ does not exhibit the same problem. _Krull_ is the only example so far, in which the hue shift is significant.[^atlantis]
+
+[^atlantis]: _Atlantis_, as mentioned in the previous article, also seems to have a different hue to say _Pitfall_, but the difference is less clear in that case. I would go so far as to suggest that in the case of _Krull_ the difference is inarguable.
 
 ![Millipede (hue 0)](millipede_hue_0.png)
 
