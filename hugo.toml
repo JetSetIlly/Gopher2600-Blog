@@ -19,3 +19,8 @@ networks = [
 
 [params.ananke.social.github]
 username = "JetSetIlly/Gopher2600"
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
