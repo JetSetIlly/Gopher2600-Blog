@@ -1,0 +1,15 @@
+.supplement {
+  margin: 1.5rem 0;
+  padding-left: 1rem;
+  padding-right: 0.5rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  background-color: #ededed;
+  border-left: 4px solid #ddd;
+  border-radius: 4px;
+  font-size: 90%;
+}
+
+.supplement > :first-child {
+	margin-top: 0;
+}
