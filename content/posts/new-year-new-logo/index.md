@@ -77,9 +77,7 @@ The old logo has been relegated to the foot of the Github page for some time. It
 
 And while I can't do much about the name this late in the game, I _can_ change the logo.
 
-I also aim to have more regularity with the blog posts. Indeed, I'm drafting one right now about the mysteries of the SARA chip and I'll hopefully have that completed soon.
+Current development activity of Gopher2600 is looking at the implementation of the 6507 emulation. The current implementation was amongst the very first Go code I wrote and hasn't changed much.
 
-SARA has been emulated by Gopher2600 for many years but there is one important property of that chip that isn't emulated at all by any emulator. Exploring that has been fun and helped create some new features...
-
-
+Related to this work is an investigation into the mysteries of the SARA chip. SARA has been emulated by Gopher2600 for many years but there is one important property of that chip that isn't really emulated at all by any emulator...
 
