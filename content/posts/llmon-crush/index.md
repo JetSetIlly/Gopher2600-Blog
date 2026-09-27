@@ -58,8 +58,7 @@ entirely in VRAM.
 For agent work, a large context would quickly become overwhelming so keeping the
 context small is crucial if we want to keep the LLM running quickly.[^gaming]
 
-The LLM is running on a locally compiled _llama.cpp_ with _CUDA_ enabled. The agent
-is _Crush_ from 
+The LLM is running on a locally compiled _llama.cpp_ with _CUDA_ enabled. The agent is _Crush_ by [Charm](https://github.com/charmbracelet/crush).
 
 _Crush_ isn't a well know agent but it caught my attention because it was far
 easier to compile and setup, for me. I've noticed that coding agents tend to be
